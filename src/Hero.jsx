@@ -1,6 +1,7 @@
 function Hero() {
   return (
     <div className="Hero">
+      <div className="fade"></div>
       <div className="main">
         <h1>The Art of Stillness</h1>
         <p>

@@ -15,6 +15,9 @@ nav {
   display: flex;
   background-color: #faeee9;
   user-select: none;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
 }
 
 nav .main {
@@ -67,12 +70,18 @@ nav h1 {
                                             Hero section 
 */
 
-.Hero {
+.Hero{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.fade {
   background-image: url(/Hero.png);
   background-size: cover;
   width: 100%;
-  height: 100vh;
-  -webkit-mask-image: linear-gradient(to top, transparent 0%, rgb(0, 0, 0) 50%);
+  height: 100%;
+  -webkit-mask-image: linear-gradient(to top, transparent -9%, rgb(0, 0, 0) 50%);
+  position: absolute;
 }
 
 .Hero .main {
@@ -81,7 +90,11 @@ nav h1 {
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
+  z-index: 10;
   gap: 20px;
+  position: absolute;
+  margin-top: 20vh;
 }
 
 .Hero .main h1 {
@@ -91,18 +104,22 @@ nav h1 {
 
 .Hero .main p{
     font-family:"Manrope",serif ;
-    max-width: 40vw;
+    max-width: 49vw;
     padding: 10px;
       color: #30312E;
     line-height: 1.5;
     text-align: center;
+    font-size: 17px;
+    font-weight: 600;
 }
 
 .Hero .main button{
     background-color: #000000;
-    padding: 20px ;
+    padding: 15px ;
     border: none;
     color: white;
     z-index: 10;
-    margin-top: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
 }
